@@ -9,5 +9,21 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
   title = 'calculator';
+
+  number1: number = 0;
+
+  number2: number = 0;
+
+  result: number = 0;
+
+  add():void{
+    
+    this.result = this.number1+this.number2;
+  }
+
+  subtract(): void{
+    this.result = this.number1 - this.number2
+  }
 }
